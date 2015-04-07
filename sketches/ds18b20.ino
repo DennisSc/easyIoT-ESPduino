@@ -1,5 +1,16 @@
 /*
- *  This sketch sends ds18b20 sensor temperature data via HTTP POST request to easyIoT server
+ *  This sketch sends ds18b20 sensor temperature data via HTTP POST request to easyIoT home automation server.
+ *  It needs the following libraries to work (besides the esp8266 standard libraries supplied with the IDE):
+ *
+ *  - https://github.com/adamvr/arduino-base64
+ *  - https://github.com/milesburton/Arduino-Temperature-Control-Library
+ *
+ *  designed to run directly on esp8266-01 module, to where it can be uploaded using this marvelous piece of software:
+ *
+ *  https://github.com/esp8266/Arduino
+ *
+ *  2015 Dennis Schulze
+ *  licensed under GNU GPL
  */
 
 #include <ESP8266WiFi.h>
